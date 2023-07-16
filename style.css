@@ -168,8 +168,32 @@ font-weight: 600;
 
  /* featured style end */
 
+/* icon section start */
+.all-icon{
+    text-align: center;
+}
+.icon-title{
+    text-align: center;
+}
+.icon-title h1{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 
-
+}
+.icon-title p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    align-items: center;
+}
 
 
 
@@ -200,6 +224,7 @@ font-weight: 600;
     }
     nav, 
     .featured,
+    .icons,
     .teams-container{
         flex-direction: column;
     }
@@ -214,6 +239,9 @@ font-weight: 600;
         gap: 20px;
      
     }
+    .icons img{
+        padding: 20px 0px;
+    }
 }
 /* medium devices */
 @media screen and (min-width:576px) and (max-width: 960px) {
@@ -221,8 +249,11 @@ font-weight: 600;
         padding: 50px;
        
     }
-    nav, .teams-container{
+    nav, .teams-container, .icons{
         flex-direction: column;
       
+    }
+    .icons img{
+        padding: 20px;
     }
 }
